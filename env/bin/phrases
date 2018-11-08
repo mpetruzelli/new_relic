@@ -1,0 +1,6 @@
+#!/Users/mike/github/new_relic/solution/env/bin/python3
+# EASY-INSTALL-DEV-SCRIPT: 'phrases==0.1','phrases'
+__requires__ = 'phrases==0.1'
+__import__('pkg_resources').require('phrases==0.1')
+__file__ = '/Users/mike/github/new_relic/solution/bin/phrases'
+exec(compile(open(__file__).read(), __file__, 'exec'))

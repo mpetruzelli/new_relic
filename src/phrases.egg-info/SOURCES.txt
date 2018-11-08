@@ -1,0 +1,10 @@
+bin/phrases
+src/phrases/__init__.py
+src/phrases/__main__.py
+src/phrases/test_top_ten.py
+src/phrases/top_ten.py
+src/phrases.egg-info/PKG-INFO
+src/phrases.egg-info/SOURCES.txt
+src/phrases.egg-info/dependency_links.txt
+src/phrases.egg-info/not-zip-safe
+src/phrases.egg-info/top_level.txt

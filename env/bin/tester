@@ -1,0 +1,6 @@
+#!/Users/mike/github/new_relic/solution/env/bin/python3
+# EASY-INSTALL-DEV-SCRIPT: 'tester==0.1','tester'
+__requires__ = 'tester==0.1'
+__import__('pkg_resources').require('tester==0.1')
+__file__ = '/Users/mike/github/new_relic/solution/bin/tester'
+exec(compile(open(__file__).read(), __file__, 'exec'))

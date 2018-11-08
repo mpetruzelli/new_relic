@@ -1,0 +1,9 @@
+bin/tester
+tester/__init__.py
+tester/__main__.py
+tester/tester.py
+tester.egg-info/PKG-INFO
+tester.egg-info/SOURCES.txt
+tester.egg-info/dependency_links.txt
+tester.egg-info/not-zip-safe
+tester.egg-info/top_level.txt
