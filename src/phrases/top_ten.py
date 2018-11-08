@@ -31,7 +31,7 @@ class Comparitor(object):
     def _create_single_string(self):
         for line in fileinput.input():
             self.entire_file.append(line)
-        self.one_string = ''.join(self.entire_file)
+        self.one_string = ''.join(self.entire_file).lower()
 
     def _clean_special_chars(self):
         self.clean_string = re.sub('\W+', ' ', self.one_string)
@@ -46,18 +46,18 @@ class Comparitor(object):
                     word, self.split_string[index+1], self.split_string[index+2]))
 
     def _find_most_common(self):
-        most_common = collections.Counter(self.phrases).most_common(10)
-        return most_common
+        self.most_common = collections.Counter(self.phrases).most_common(10)
 
     def run(self):
         self._create_single_string()
         self._clean_special_chars()
         self._split_words_to_list()
         self._create_triple_word_phrases()
-        self.most_common = self._find_most_common()
+        self._find_most_common()
         return self.most_common
 
 
 def main():
     runner = Comparitor()
     return runner.run()
+    # print("{}".format(most_common))
