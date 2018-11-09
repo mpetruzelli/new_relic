@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/mike/github/new_relic/solution/env"
+VIRTUAL_ENV="/Users/drz087/github/new_relic/env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
