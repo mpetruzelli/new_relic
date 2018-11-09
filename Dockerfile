@@ -10,7 +10,6 @@ RUN mkdir -p /build/src && \
 COPY src /build/src
 COPY bin /build/bin
 COPY setup.py /build/setup.py
-COPY pg2009.txt /build/pg2009.txt
 
 WORKDIR /build
 
@@ -18,10 +17,12 @@ RUN pip install -e .
 
 FROM builder
 
-RUN mkdir -p /tests
+WORKDIR /build/src
 
-COPY tests /tests
+RUN python */test_*.py
 
-WORKDIR /tests
+FROM builder
 
-RUN chmod +x *.sh;./test_top_ten.sh
+WORKDIR /
+
+CMD echo 'Usage: mount volumes with desired files, and run "phrases file1.txt file2.txt"'
